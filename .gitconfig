@@ -1,0 +1,23 @@
+[alias]
+	st = status -sb
+	ci = commit -m
+	br = branch
+	co = checkout
+	p = push
+	tags = tag -l
+	rb = rebase
+	hist = log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --graph --date=short
+	down = pull -p
+	onup = push
+	ds = diff --staged
+[user]
+	name = George Walters II
+	email = george.walters@teamnorthwoods.com
+[branch]
+	autosetuprebase = always
+[color]
+	ui = 1
+[push]
+	default = simple
+[pull]
+	rebase = true
